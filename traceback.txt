@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 33, in script
+    show dodona at halF_size
+  File "game/script.rpy", line 33, in <module>
+    show dodona at halF_size
+NameError: name 'halF_size' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 33, in script
+    show dodona at halF_size
+  File "C:\Users\14064\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\14064\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\14064\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\14064\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\14064\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 33, in <module>
+    show dodona at halF_size
+NameError: name 'halF_size' is not defined
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+Oracle Detective Demo 1.0
+Wed Aug 13 22:14:29 2025
